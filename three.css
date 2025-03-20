@@ -1,0 +1,127 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #182628;
+  overflow-x: hidden;
+  margin: 0;
+  display: block;
+  font-family: "Source Sans Pro", "Roboto", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  padding-top: 18px;
+  display: inline-flex;
+  -webkit-transition: all ease-out 0.5s;
+  -moz-transition: all ease-out 0.5s;
+  -o-transition: all ease-out 0.5s;
+  transition: all ease-out 0.5s;
+}
+
+.panel .row {
+  padding-top: 5%;
+}
+
+.panel .row p {
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  float: left;
+  position: relative;
+  font-weight: 500;
+  color: #ccc;
+}
+
+.title h1 {
+  text-align: center;
+  font-size: 6em;
+  color: #ccc;
+  font-weight: 900;
+  letter-spacing: 0;
+  mix-blend-mode: color-dodge;
+}
+
+h2 {
+  text-align: left;
+  font-size: 3.3em;
+  color: #ccc !important;
+  font-weight: 300;
+}
+
+#canvas {
+  position: fixed;
+}
+
+.pagination {
+  list-style: none;
+  display: inline-flex;
+  padding: 5px;
+  width: 100%;
+}
+
+.pagination li {
+  height: 100%;
+  margin-right: 15px;
+  color: #ccc;
+  position: relative;
+  transition: all 0.2s ease;
+  padding: 5px;
+}
+
+.pagination a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+.pagination a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pagination a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  border-bottom: 2px solid #999;
+  transition: 0.4s;
+}
+
+.pagination a:hover:before {
+  width: 100%;
+}
+
+.pagination a.active {
+  color: #999;
+}
+
+.pagination a.active:before {
+  width: 100%;
+}
+
+.class_active {
+  display: block;
+  color: #00d8ff; 
+  font-size: 100px;
+}
+
+#response {
+  display: block;
+  margin: 0 auto;
+}
